@@ -1,0 +1,21 @@
+/* Estilos da página Painel */
+
+.painel {
+  flex-grow: 1; 
+  min-width: 0;
+  padding: 40px 32px 64px;
+}
+
+.painel-conteudo {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+@media (max-width: 800px) {
+  .painel {
+    padding: 24px 16px 48px;
+  }
+}

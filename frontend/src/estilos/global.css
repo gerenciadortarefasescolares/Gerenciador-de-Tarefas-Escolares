@@ -1,0 +1,31 @@
+:root {
+  --cor-fundo: #f6f7f9;
+  --cor-cartao: #ffffff;
+  --cor-borda: #e1e4ea;
+  --cor-texto: #15181e;
+  --cor-texto-fraco: #555c69;
+  --cor-item-ativo: #eceef2;
+  --cor-destaque: #4338ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Figtree', system-ui, sans-serif;
+}
+
+.aplicativo {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .aplicativo {
+    flex-direction: column;
+  }
+}

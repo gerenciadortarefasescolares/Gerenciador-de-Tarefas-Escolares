@@ -1,0 +1,78 @@
+/* Estilos do menu lateral */
+
+.menu-lateral {
+  width: 240px;
+  flex-shrink: 0; 
+  padding: 28px 16px;
+  background: var(--cor-cartao);
+  border-right: 1px solid var(--cor-borda);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Logo: quadradinho colorido + nome */
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.menu-logo-icone {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--cor-destaque);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-logo-nome {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Lista de botões */
+.menu-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--cor-texto);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: var(--cor-item-ativo);
+}
+
+.menu-item-ativo {
+  background: var(--cor-item-ativo);
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .menu-lateral {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--cor-borda);
+    gap: 16px;
+  }
+}
