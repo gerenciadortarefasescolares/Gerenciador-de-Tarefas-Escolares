@@ -1,0 +1,41 @@
+/* barra de progresso */
+
+.barra-progresso {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+}
+
+.barra-progresso-topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.barra-progresso-titulo {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.barra-progresso-texto {
+  font-size: 15px;
+  color: var(--cor-texto-fraco);
+}
+
+.barra-progresso-fundo {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--cor-item-ativo);
+  overflow: hidden;
+}
+
+.barra-progresso-preenchida {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--cor-destaque);
+}

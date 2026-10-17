@@ -1,9 +1,6 @@
-// Mostra o título, a data de hoje e o botão "Nova tarefa".
-
-import { IconeMais } from '../Icones/Icones.jsx'
+import { IconeMais } from '../Icones/Icones.jsx' // Mostra o título a data de hoje e o botão de nova tarefa.
 import './Cabecalho.css'
 
-// Monta a data de hoje em extenso
 function pegarDataDeHoje() {
   const texto = new Date().toLocaleDateString('pt-BR', {
     weekday: 'long',
@@ -13,7 +10,6 @@ function pegarDataDeHoje() {
   return texto.charAt(0).toUpperCase() + texto.slice(1)
 }
 
-// "titulo" vem da página que usa o cabeçalho
 function Cabecalho({ titulo }) {
   const dataDeHoje = pegarDataDeHoje()
 
@@ -24,7 +20,7 @@ function Cabecalho({ titulo }) {
         <p className="cabecalho-data">{dataDeHoje}</p>
       </div>
 
-      {/* Vai abrir o formulário futuramente. */}
+      {/* quero implementar a aba de nova tarefa aqui*/}
       <button type="button" className="botao-principal">
         <IconeMais />
         Nova tarefa

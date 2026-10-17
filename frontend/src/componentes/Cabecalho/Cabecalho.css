@@ -20,7 +20,6 @@
   color: var(--cor-texto-fraco);
 }
 
-/* Botão colorido */
 .botao-principal {
   display: flex;
   align-items: center;

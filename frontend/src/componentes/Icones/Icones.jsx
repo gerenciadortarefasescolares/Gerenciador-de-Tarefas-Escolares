@@ -1,4 +1,4 @@
-// desenhos pequenos (ícones) usados no site.
+// icones
 
 const padrao = {
   width: 18,

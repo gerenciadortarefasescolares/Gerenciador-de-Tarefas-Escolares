@@ -14,8 +14,24 @@
   gap: 28px;
 }
 
+.painel-resumo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* cartões */
+.painel-cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
 @media (max-width: 800px) {
   .painel {
     padding: 24px 16px 48px;
+  }
+  .painel-cartoes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

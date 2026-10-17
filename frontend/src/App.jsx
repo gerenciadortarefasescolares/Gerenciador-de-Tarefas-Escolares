@@ -4,10 +4,10 @@ import Painel from './paginas/Painel/Painel.jsx'
 function App() {
   return (
     <div className="aplicativo">
-      {/* Menu que fica na esquerda */}
+      {/* Pagina da esquerda */}
       <MenuLateral paginaAtual="painel" />
 
-      {/* Página que aparece na direita */}
+      {/* Pagina da direita */}
       <Painel />
     </div>
   )
